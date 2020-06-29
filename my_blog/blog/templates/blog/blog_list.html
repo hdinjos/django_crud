@@ -1,0 +1,16 @@
+<style>
+  table, tr, td, th {border: 1px solid #000;}
+</style>
+
+<h1>Our Blog</h1>
+
+<table>
+  <th>id</th>
+  <th>title</th>
+  {% for list in blog_list %}
+  <tr>
+    <td>{{list.id}}</td>
+    <td> {{list.title}}</td>
+  </tr>
+  {% endfor %}
+</table>
